@@ -1,0 +1,73 @@
+body {
+    background-image: url('http://admdub.ru/uploads/file/15555-mountain-climbing-wallpaper.jpg');
+    background-attachment: fixed ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Skranji', cursive;
+}
+
+
+h1 {
+    text-align: center;
+    color: #acacad;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    font-size: 120px;
+
+}
+
+.container {
+    background: #bfc5ce75;
+    color: black;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: 6%;
+}
+
+h2 {
+    margin-top: 15px;
+    font-size: 42px;
+}
+
+
+
+.btn {
+    margin-bottom: 3%;
+    margin-top: 3%;
+    font-size: 34px;
+}
+
+.card {
+    width: 100%;
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 40px; /* Added */
+    border-radius: 25px;
+    border: solid 2px black;
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 21 ease-out;
+    transition: background-color 1s ease-out;
+    background-color: #bfc5ce75;
+
+}
+
+.card:hover {
+    background-color: #17a2b8;
+}
+
+#que1 {
+    margin-bottom: 32px;
+}
+
+#que1 h2 {
+    font-size: 40px;
+}
+
+.card-text {
+    font-size: 20px;
+}
+
+.card-body {
+    height: 100px;
+}
