@@ -1,5 +1,3 @@
-
-
 var right = 0;
 var wrong = 0;
 var noa = 0;
@@ -196,6 +194,7 @@ function que1() {
         $('.result').show();
         $('#title').text('Times up!');
         $('#correct-answer').text(ques4.a2);
+        $('.fh1').hide();
         noa++;
         clearInterval(timerup4);
     },5000);
@@ -213,6 +212,7 @@ function que1() {
         $('.result').show();
         $('#title').text('Correct!');
         $('#correct-answer').text(ques4.a2);
+        $('.fh1').hide();
         clearInterval(timerup4);
     })
     $('#answer1').on('click', function(){
@@ -221,6 +221,7 @@ function que1() {
         $('.result').show();
         $('#title').text('Incorret!');
         $('#correct-answer').text(ques4.a2);
+        $('.fh1').hide();
         clearInterval(timerup4);
     })
     $('#answer4').on('click', function(){
@@ -229,6 +230,7 @@ function que1() {
         $('.result').show();
         $('#title').text('Incorret!');
         $('#correct-answer').text(ques4.a2);
+        $('.fh1').hide();
         clearInterval(timerup4);
     })
     $('#answer3').on('click', function(){
@@ -237,6 +239,7 @@ function que1() {
         $('.result').show();
         $('#title').text('Incorret!');
         $('#correct-answer').text(ques4.a2);
+        $('.fh1').hide();
         clearInterval(timerup4);
     })
 }
@@ -247,6 +250,24 @@ function que1() {
         $('#title').text("Let's see how you did...");
         $('.final-hide').hide();
         $('#correct-answer').text('No answer: ' + noa);
+        $('#right').text('Correct: ' + right);
+        $('#wrong').text('Incorrect: ' + wrong);
+    };
+
+    function passFail(){
+        $('.que-div').hide();
+        $('.result').show();
+        $('#title').hide();
+        $('.final-hide').hide();
+        if(right === 4) {
+            $('#correct-answer').text('You Passed!');
+            $('#right').text('Please see front desk to collect your waiver.');
+            $('#wrong').hide();
+        } else {
+        $('#correct-answer').text('You failed!');
+        $('#right').text('Please see front desk.');
+        $('#wrong').hide();
+        }
     };
 
 $(document).ready(function() {
@@ -261,6 +282,7 @@ $(document).ready(function() {
         setTimeout(que3, 20000);
         setTimeout(que4, 30000);
         setTimeout(final,40000);
+        setTimeout(passFail, 45000);
     })
 });
 

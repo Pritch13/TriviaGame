@@ -79,6 +79,18 @@ h2 {
     /* height: 100px; */
 }
 
+#right{
+    color: #17a2b8;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    font-size: 50px;
+}
+
+#wrong{
+    color: #17a2b8;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    font-size: 50px;
+}
+
 #correct-answer {
     color: #17a2b8;
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
