@@ -7,66 +7,353 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="assets/javascript/app.js"></script>
+    <!-- <script src="assets/javascript/app.js"></script> -->
 
     <title>Rock certification</title>
+
+    <script>
+
+    var right = 0;
+    var wrong = 0;
+    var noa = 0;
+    
+    var ques1 = {
+        q: "What is back clipping ?",
+        a1: "Clipping the quickdraw upside down.",
+        a2: "Attaching the rope to your harness with a figue 8 knot.",
+        a3: "Clipping the rope through the quickdraw away from you.",
+        a4: "Leaving your quickdraws at home"
+    }
+    var ques2 = {
+        q: "Why do you flake out the rope before climbing ?",
+        a1: "To check for knots and to make sure you belay from the right side.",
+        a2: "Just to check for knots.",
+        a3: "To check for any animal bite marks.",
+        a4: "So you dont belay from the wrong end of the rope."
+    }
+    var ques3 = {
+        q: "question 3?",
+        a1: "To check for knots and to make sure you belay from the right side.",
+        a2: "Just to check for knots.",
+        a3: "To check for any animal bite marks.",
+        a4: "right."
+    }
+    var ques4 = {
+        q: "Why do you climb?",
+        a1: "kfijs fowje fow efo weofj owefowefo weopif wefo wef.",
+        a2: "right.",
+        a3: "Toj wefoj woj fow jefojw efjfojowuef wojfowiefowjef.",
+        a4: "So you dont belay from the wrong end of the rope."
+    }
+
+    function que1() {
+        $('.welcome').hide();
+        $('.que-div').show();
+        $('#question').text(ques1.q);
+        $('#answer1').text(ques1.a1);
+        $('#answer2').text(ques1.a2);
+        $('#answer3').text(ques1.a3);
+        $('#answer4').text(ques1.a4);
+        $('#answer3').on('click', function(){
+            right++;
+            $('.que-div').hide();
+            $('.result').show();
+            $('#title').text('Correct!');
+            $('#correct-answer').text(ques1.a3);
+            stop();
+        })
+        $('#answer1').on('click', function(){
+            wrong++;
+            $('.que-div').hide();
+            $('.result').show();
+            $('#title').text('Incorret!');
+            $('#correct-answer').text(ques1.a3);
+            stop();
+        })
+        $('#answer2').on('click', function(){
+            wrong++;
+            $('.que-div').hide();
+            $('.result').show();
+            $('#title').text('Incorret!');
+            $('#correct-answer').text(ques1.a3);
+            stop();
+        })
+        $('#answer4').on('click', function(){
+            wrong++;
+            $('.que-div').hide();
+            $('.result').show();
+            $('#title').text('Incorret!');
+            $('#correct-answer').text(ques1.a3);
+            stop();
+        })
+    }
+
+        function que2() {
+        $('.result').hide();
+        $('.que-div').show();
+        $('#question').text(ques2.q);
+        $('#answer1').text(ques2.a1);
+        $('#answer2').text(ques2.a2);
+        $('#answer3').text(ques2.a3);
+        $('#answer4').text(ques2.a4);
+        $('#answer1').on('click', function(){
+            right++;
+            $('.que-div').hide();
+            $('.result').show();
+            $('#title').text('Correct!');
+            $('#correct-answer').text(ques2.a1);
+            stop();
+        })
+        $('#answer3').on('click', function(){
+            wrong++;
+            $('.que-div').hide();
+            $('.result').show();
+            $('#title').text('Incorret!');
+            $('#correct-answer').text(ques2.a1);
+            stop();
+        })
+        $('#answer2').on('click', function(){
+            wrong++;
+            $('.que-div').hide();
+            $('.result').show();
+            $('#title').text('Incorret!');
+            $('#correct-answer').text(ques2.a1);
+            stop();
+        })
+        $('#answer4').on('click', function(){
+            wrong++;
+            $('.que-div').hide();
+            $('.result').show();
+            $('#title').text('Incorret!');
+            $('#correct-answer').text(ques2.a1);
+            stop();
+        })
+    }
+
+        function que3() {
+        $('.result').hide();
+        $('.que-div').show();
+        $('#question').text(ques3.q);
+        $('#answer1').text(ques3.a1);
+        $('#answer2').text(ques3.a2);
+        $('#answer3').text(ques3.a3);
+        $('#answer4').text(ques3.a4);
+        $('#answer4').on('click', function(){
+            right++;
+            $('.que-div').hide();
+            $('.result').show();
+            $('#title').text('Correct!');
+            $('#correct-answer').text(ques3.a4);
+            stop();
+        })
+        $('#answer1').on('click', function(){
+            wrong++;
+            $('.que-div').hide();
+            $('.result').show();
+            $('#title').text('Incorret!');
+            $('#correct-answer').text(ques3.a4);
+            stop();
+        })
+        $('#answer2').on('click', function(){
+            wrong++;
+            $('.que-div').hide();
+            $('.result').show();
+            $('#title').text('Incorret!');
+            $('#correct-answer').text(ques3.a4);
+            stop();
+        })
+        $('#answer3').on('click', function(){
+            wrong++;
+            $('.que-div').hide();
+            $('.result').show();
+            $('#title').text('Incorret!');
+            $('#correct-answer').text(ques3.a4);
+            stop();
+        })
+    }
+
+        function que4() {
+        $('.result').hide();
+        $('.que-div').show();
+        $('#question').text(ques4.q);
+        $('#answer1').text(ques4.a1);
+        $('#answer2').text(ques4.a2);
+        $('#answer3').text(ques4.a3);
+        $('#answer4').text(ques4.a4);
+        $('#answer2').on('click', function(){
+            right++;
+            $('.que-div').hide();
+            $('.result').show();
+            $('#title').text('Correct!');
+            $('#correct-answer').text(ques4.a2);
+            stop();
+        })
+        $('#answer1').on('click', function(){
+            wrong++;
+            $('.que-div').hide();
+            $('.result').show();
+            $('#title').text('Incorret!');
+            $('#correct-answer').text(ques4.a2);
+            stop();
+        })
+        $('#answer4').on('click', function(){
+            wrong++;
+            $('.que-div').hide();
+            $('.result').show();
+            $('#title').text('Incorret!');
+            $('#correct-answer').text(ques4.a2);
+            stop();
+        })
+        $('#answer3').on('click', function(){
+            wrong++;
+            $('.que-div').hide();
+            $('.result').show();
+            $('#title').text('Incorret!');
+            $('#correct-answer').text(ques4.a2);
+            stop();
+        })
+    }
+
+        function timesUp1(){
+            $('.que-div').hide();
+            $('.result').show();
+            $('#title').text('Times up!');
+            $('#correct-answer').text(ques1.a3);
+            noa++;
+        };
+        function timesUp2(){
+            $('.que-div').hide();
+            $('.result').show();
+            $('#title').text('Times up!');
+            $('#correct-answer').text(ques2.a1);
+            noa++;
+        };
+        function timesUp3(){
+            $('.que-div').hide();
+            $('.result').show();
+            $('#title').text('Times up!');
+            $('#correct-answer').text(ques3.a4);
+            noa++;
+        };
+        function timesUp4(){
+            $('.que-div').hide();
+            $('.result').show();
+            $('#title').text('Times up!');
+            $('#correct-answer').text(ques4.a2);
+            noa++;
+        };
+        function final(){
+            $('.que-div').hide();
+            $('.result').show();
+            $('#title').text("Let's see how you did...");
+            $('.final-hide').hide();
+            $('#correct-answer').text('No answer: ' + noa);
+        };
+
+    $(document).ready(function() {
+
+
+        $('.que-div').hide();
+        $('.result').hide();
+
+        $('.btn').on('click', function(){
+            que1();
+            setTimeout(timesUp1, 5000);
+            setTimeout(que2, 10000);
+            setTimeout(timesUp2, 15000);
+            setTimeout(que3, 20000)
+            setTimeout(timesUp3, 25000);
+            setTimeout(que4,30000);
+            setTimeout(timesUp4, 35000);
+            setTimeout(final,40000);
+
+        })
+    });
+    
+    
+    </script>
+
   </head>
   <body>
 
     <h1>Rock certification</h1>
 
-    <div class="container">
-
-        <div class="row" id="que1">
-            <div class="col-lg-12">
-                <h2>Why do you flake out the rope before climbing?</h2>
-            </div>
-        </div>
-
-        <div class="row" id="answers1">
-            <div class="col-lg-6">
-                <div class="card">
-                    <div class="card-body">
-                        <p class="card-text">To check for knots and to make sure you belay from the right side.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="card">
-                    <div class="card-body">
-                        <p class="card-text">Just to check for knots.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="row" id="answers2">
-            <div class="col-lg-6">
-                <div class="card">
-                    <div class="card-body">
-                        <p class="card-text">To check for any animal bite marks.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="card">
-                    <div class="card-body">
-                        <p class="card-text">So you dont belay from the wrong end of the rope.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
+    <div class="container welcome">
         <div class="row">
             <div class="col-lg-12">
-                <h3>Time left: <p id="time-left"></p></h3>
+                <h2>Welcome to your rock climbing certification test</h2>
+                <button type="button" class="btn btn-info">Let's get started!</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container que-div">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 id="question"></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text" id="answer1"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 false">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text" id="answer2"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text" id="answer3"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text"id="answer4"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="row">
+                <div class="col-lg-12">
+                    <h3>Time left:
+                        <p id="time-left"></p>
+                    </h3>
+                </div>
             </div>
         </div>
 
-
-    </div>
-
+        <!-- times up screen -->
+        <div class="container result">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 id="title"></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="final-hide">The answer was:
+                        <p id="correct-answer"></p>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="final-hide">Next question...</h3>
+                </div>
+            </div>
+        </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>

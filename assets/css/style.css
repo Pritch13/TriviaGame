@@ -35,7 +35,14 @@ h2 {
     margin-bottom: 3%;
     margin-top: 3%;
     font-size: 34px;
+    animation: blinker 1.5s linear infinite;
 }
+
+@keyframes blinker {
+    50% {
+      opacity: 0.6;
+    }
+  }
 
 .card {
     width: 100%;
@@ -69,5 +76,22 @@ h2 {
 }
 
 .card-body {
-    height: 100px;
+    /* height: 100px; */
 }
+
+#correct-answer {
+    color: #17a2b8;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    font-size: 50px;
+}
+
+#incorrect-answer {
+    color: #17a2b8;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    font-size: 50px;
+}
+
+p {
+    font-size: 32px;
+}
+
