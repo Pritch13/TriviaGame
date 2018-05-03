@@ -72,11 +72,12 @@ h2 {
 }
 
 .card-text {
-    font-size: 20px;
+    font-size: 40px;
 }
 
 .card-body {
-    /* height: 100px; */
+    height: 100px;
+    font-size: 23px;
 }
 
 #right{
@@ -106,4 +107,6 @@ h2 {
 p {
     font-size: 32px;
 }
+
+
 

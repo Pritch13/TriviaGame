@@ -1,13 +1,14 @@
 var right = 0;
 var wrong = 0;
 var noa = 0;
+var passed = false;
 
 var ques1 = {
     q: "What is back clipping ?",
     a1: "Clipping the quickdraw upside down.",
     a2: "Attaching the rope to your harness with a figure 8 knot.",
     a3: "Clipping the rope through the quickdraw away from you.",
-    a4: "Leaving your quickdraws at home"
+    a4: "Leaving your quickdraws at home."
 }
 var ques2 = {
     q: "Why do you flake out the rope before climbing ?",
@@ -41,6 +42,15 @@ function que1() {
         noa++;
         clearInterval(timerup1);
     },5000)
+
+    var counter = 5;
+    var interval = setInterval(function() {
+        counter--;
+        $('#time-left').text(counter)
+        if (counter == 0) {
+            clearInterval(interval);
+        }
+    }, 1000);
 
     $('.welcome').hide();
     $('.que-div').show();
@@ -84,7 +94,8 @@ function que1() {
 }
 
     function que2() {
-
+    $('[id^="answer"]').off('click');
+    $('#time-left').html('5');
     var timerup2 =  setInterval(function(){
         $('.que-div').hide();
         $('.result').show();
@@ -93,6 +104,15 @@ function que1() {
         noa++;
         clearInterval(timerup2);
     },5000)
+
+    var counter = 5;
+    var interval = setInterval(function() {
+        counter--;
+        $('#time-left').text(counter)
+        if (counter == 0) {
+            clearInterval(interval);
+        }
+    }, 1000);
 
     $('.result').hide();
     $('.que-div').show();
@@ -136,7 +156,8 @@ function que1() {
 }
 
     function que3() {
-
+    $('[id^="answer"]').off('click');
+    $('#time-left').html('5');
     var timerup3 = setInterval(function(){
         $('.que-div').hide();
         $('.result').show();
@@ -145,6 +166,15 @@ function que1() {
         noa++;
         clearInterval(timerup3);
     },5000);
+
+    var counter = 5;
+    var interval = setInterval(function() {
+        counter--;
+        $('#time-left').text(counter)
+        if (counter == 0) {
+            clearInterval(interval);
+        }
+    }, 1000);
 
     $('.result').hide();
     $('.que-div').show();
@@ -188,7 +218,8 @@ function que1() {
 }
 
     function que4() {
-
+    $('[id^="answer"]').off('click');
+    $('#time-left').html('5');
     var timerup4 = setInterval(function(){
         $('.que-div').hide();
         $('.result').show();
@@ -198,6 +229,15 @@ function que1() {
         noa++;
         clearInterval(timerup4);
     },5000);
+
+    var counter = 5;
+    var interval = setInterval(function() {
+        counter--;
+        $('#time-left').text(counter)
+        if (counter == 0) {
+            clearInterval(interval);
+        }
+    }, 1000);
 
     $('.result').hide();
     $('.que-div').show();
@@ -264,9 +304,9 @@ function que1() {
             $('#right').text('Please see front desk to collect your waiver.');
             $('#wrong').hide();
         } else {
-        $('#correct-answer').text('You failed!');
-        $('#right').text('Please see front desk.');
-        $('#wrong').hide();
+            $('#correct-answer').text('You failed!');
+            $('#right').html("<button type='button'id='reload' class='btn btn-info'>Try again!</button>");
+            $('#wrong').hide();
         }
     };
 
@@ -284,6 +324,10 @@ $(document).ready(function() {
         setTimeout(final,40000);
         setTimeout(passFail, 45000);
     })
+
+    $('body').on('click', '#reload', function(){
+        location.reload(true);
+     })
 });
 
 
