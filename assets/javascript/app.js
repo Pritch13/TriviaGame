@@ -71,7 +71,7 @@ function que1() {
         wrong++;
         $('.que-div').hide();
         $('.result').show();
-        $('#title').text('Incorret!');
+        $('#title').text('Incorrect!');
         $('#correct-answer').text(ques1.a3);
         clearInterval(timerup1);
     })
@@ -79,7 +79,7 @@ function que1() {
         wrong++;
         $('.que-div').hide();
         $('.result').show();
-        $('#title').text('Incorret!');
+        $('#title').text('Incorrect!');
         $('#correct-answer').text(ques1.a3);
         clearInterval(timerup1);
     })
@@ -87,7 +87,7 @@ function que1() {
         wrong++;
         $('.que-div').hide();
         $('.result').show();
-        $('#title').text('Incorret!');
+        $('#title').text('Incorrect!');
         $('#correct-answer').text(ques1.a3);
         clearInterval(timerup1);
     })
@@ -133,7 +133,7 @@ function que1() {
         wrong++;
         $('.que-div').hide();
         $('.result').show();
-        $('#title').text('Incorret!');
+        $('#title').text('Incorrect!');
         $('#correct-answer').text(ques2.a1);
         clearInterval(timerup2);
     })
@@ -141,7 +141,7 @@ function que1() {
         wrong++;
         $('.que-div').hide();
         $('.result').show();
-        $('#title').text('Incorret!');
+        $('#title').text('Incorrect!');
         $('#correct-answer').text(ques2.a1);
         clearInterval(timerup2);
     })
@@ -149,7 +149,7 @@ function que1() {
         wrong++;
         $('.que-div').hide();
         $('.result').show();
-        $('#title').text('Incorret!');
+        $('#title').text('Incorrect!');
         $('#correct-answer').text(ques2.a1);
         clearInterval(timerup2);
     })
@@ -195,7 +195,7 @@ function que1() {
         wrong++;
         $('.que-div').hide();
         $('.result').show();
-        $('#title').text('Incorret!');
+        $('#title').text('Incorrect!');
         $('#correct-answer').text(ques3.a4);
         clearInterval(timerup3);
     })
@@ -203,7 +203,7 @@ function que1() {
         wrong++;
         $('.que-div').hide();
         $('.result').show();
-        $('#title').text('Incorret!');
+        $('#title').text('Incorrect!');
         $('#correct-answer').text(ques3.a4);
         clearInterval(timerup3);
     })
@@ -211,7 +211,7 @@ function que1() {
         wrong++;
         $('.que-div').hide();
         $('.result').show();
-        $('#title').text('Incorret!');
+        $('#title').text('Incorrect!');
         $('#correct-answer').text(ques3.a4);
         clearInterval(timerup3);
     })
@@ -259,7 +259,7 @@ function que1() {
         wrong++;
         $('.que-div').hide();
         $('.result').show();
-        $('#title').text('Incorret!');
+        $('#title').text('Incorrect!');
         $('#correct-answer').text(ques4.a2);
         $('.fh1').hide();
         clearInterval(timerup4);
@@ -268,7 +268,7 @@ function que1() {
         wrong++;
         $('.que-div').hide();
         $('.result').show();
-        $('#title').text('Incorret!');
+        $('#title').text('Incorrect!');
         $('#correct-answer').text(ques4.a2);
         $('.fh1').hide();
         clearInterval(timerup4);
@@ -277,7 +277,7 @@ function que1() {
         wrong++;
         $('.que-div').hide();
         $('.result').show();
-        $('#title').text('Incorret!');
+        $('#title').text('Incorrect!');
         $('#correct-answer').text(ques4.a2);
         $('.fh1').hide();
         clearInterval(timerup4);
